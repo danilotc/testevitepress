@@ -7,7 +7,7 @@ editLink: true
 Algum outro conteúdo textual aqui para explicar alguma coisa referente ao título que aparece na tela por causa do frontmatter.
 
 
-Interpolação: {{ 2 + 1 }}
+Interpolação: {{ 2 + 1 + 5 }}
 
 Diretivas: <span v-for="i in 3">{{ i }}</span>
 
