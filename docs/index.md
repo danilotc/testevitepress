@@ -16,12 +16,12 @@ hero:
 
 features:
   - icon: 📝
-  - title: Feature A
+    title: Feature A
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - icon: 📝
-  - title: Feature B
+    title: Feature B
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - icon: 📝
-  - title: Feature C
+    title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
