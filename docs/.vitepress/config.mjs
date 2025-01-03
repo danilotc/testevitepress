@@ -8,11 +8,12 @@ export default defineConfig({
   lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    // Este trecho adiciona menu na parte superior da página
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/config/markdown-examples' },
       { text: 'API', link: '/guide/api-examples' },
-
+      // Adicionando dropdown no menu
       { 
         text: 'Menu Dropdown', 
         items: [
@@ -37,6 +38,11 @@ export default defineConfig({
       }
     ],
 
+    /**
+     * Este trecho mostra links na barra lateral (sidebar) para
+     * levar até arquivos específicos. Os links estão agrupados
+     * sem recurso de colapse.
+     */
     // sidebar: [
     //   {
     //     text: 'Examples',
@@ -55,6 +61,11 @@ export default defineConfig({
     //   }
     // ],
 
+    /**
+     * Este trecho mostra links na barra lateral (sidebar) para
+     * levar até arquivos específicos. Os links estão agrupados
+     * com recurso de colapse (ou não).
+     */
     sidebar: {
       '/guide/': [
         {
@@ -76,33 +87,62 @@ export default defineConfig({
       ]
     },
 
+    /**
+     * Este trecho mostra icones ao lado direito do menu principal
+     * como github, facebook, x, linkedin, etc.
+     */
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ],
 
+    // analisar o motivo pelo qual este trecho não funcionou
     head: [
       ['link', { rel: 'icon', href: '/dist/assets/favicon-48x48.png' }]
     ],
 
+    /**
+     * Este trecho adiciona um rodapé na página, mas parece
+     * que só funciona na página inicial.
+     */
     footer: {
       message: 'Lançado sob a Licença MIT.',
       copyright: 'Direitos autorais © 2019-presente Evan You'
     },
 
+    /**
+     * Este trecho mostra um link ao lado da última atualização
+     * do arquivo. Ao clicar é possível editar diretamente no
+     * github o arquivo .md
+     */
     editLink: {
       pattern: 'https://github.com/danilotc/testevitepress/edit/main/docs/:path',
       text: 'Editar esta página no GitHub'
     },
 
+    /**
+     * Este código modifica o texto da última alteração feita no
+     * arquivo. Em defineConfig é preciso adicionar o trecho de
+     * código lastUpdated: true
+     * Isso irá mostrar a data e hora da última atualização feita
+     * naquele arquivo.
+     */
     lastUpdated: {
       text: 'Atualizado em'
     },
 
+    /**
+     * Adicionando rodapé na página, aparentemente este recurso
+     * só funciona na página inicial.
+     */
     docFooter: {
       prev: 'Anterior',
       next: 'Próximo'
     },
 
+    /**
+     * Adicionando campo de busca no menu principal que pode ser
+     * acessado com atalho Ctrl K.
+     */
     search: {
       provider: 'local'
     }
