@@ -47,7 +47,7 @@ export default defineConfig({
       text: 'Atualizado em',
       formatOptions: {
         dateStyle: 'full',
-        timeStyle: 'medium'
+        timeStyle: 'short'
       }
     }
   }
