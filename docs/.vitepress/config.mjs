@@ -101,6 +101,10 @@ export default defineConfig({
     docFooter: {
       prev: 'Anterior',
       next: 'Próximo'
+    },
+
+    search: {
+      provider: 'local'
     }
   }
 })
