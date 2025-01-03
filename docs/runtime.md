@@ -1,6 +1,6 @@
 ---
 title:  FrontMatter
-editLink: true
+editLink: false
 ---
 
 # {{ $frontmatter.title }}
