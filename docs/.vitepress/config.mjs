@@ -59,9 +59,10 @@ export default defineConfig({
       '/guide/': [
         {
           text: "Guide",
+          collapsed: false,
           items: [
-            { text: 'Texto 1', link: '/guide/' },
-            { text: 'Texto 2', link: '/guide/api-examples' }
+            { text: 'Indice', link: '/guide/' },
+            { text: 'API Exemplo', link: '/guide/api-examples' }
           ]
         }
       ],
