@@ -69,7 +69,7 @@ export default defineConfig({
       ],
       '/config/': [
         {
-          text: 'Guia',
+          text: 'Configuração',
           items: [
             { text: 'Markdown', link: '/config/markdown-examples' }
           ]
