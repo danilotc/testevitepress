@@ -24,8 +24,7 @@ export default defineConfig({
           }
         ]
       },
-      { 
-        text: 'Menu Dropdown', 
+      {
         items: [
           {
             text: 'Titulo da Seção B',
