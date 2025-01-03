@@ -48,6 +48,13 @@ export default defineConfig({
           { text: 'Runtime API Examples', link: '/api-examples' },
           { text: 'Runtime', link: '/runtime' }
         ]
+      },
+      {
+        text: 'Testando',
+        items: [
+          { text: 'Item 1', link: "..." },
+          { text: 'Item 2', link: "..." },
+        ]
       }
     ],
 
