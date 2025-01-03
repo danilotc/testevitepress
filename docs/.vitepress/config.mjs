@@ -41,6 +41,14 @@ export default defineConfig({
     editLink: {
       pattern: 'https://github.com/danilotc/testevitepress/edit/main/docs/:path',
       text: 'Editar esta página no GitHub'
+    },
+
+    lastUpdated: {
+      text: 'Atualizado em',
+      formatOptions: {
+        dateStyle: 'full',
+        timeStyle: 'medium'
+      }
     }
   }
 })
