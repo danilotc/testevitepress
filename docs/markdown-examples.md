@@ -1,6 +1,5 @@
 ---
 outline: deep
-editLink: true
 ---
 
 # Markdown Extension Examples
