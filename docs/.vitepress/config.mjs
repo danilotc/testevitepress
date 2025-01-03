@@ -45,6 +45,11 @@ export default defineConfig({
 
     lastUpdated: {
       text: 'Atualizado em'
+    },
+
+    docFooter: {
+      prev: 'Página anterior',
+      next: 'Próxima página'
     }
   }
 })
