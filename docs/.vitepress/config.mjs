@@ -6,7 +6,6 @@ export default defineConfig({
   title: "Meu projeto teste",
   description: "A VitePress Site",
   lastUpdated: true,
-  logo: '/public/favicon-48x48.png',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
