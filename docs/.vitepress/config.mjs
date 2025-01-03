@@ -10,7 +10,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' },
+      { text: 'Examples', link: '/config/markdown-examples' },
       { text: 'Contact', link: '/markdown-contact' },
 
       { 
@@ -39,23 +39,43 @@ export default defineConfig({
       }
     ],
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' },
-          { text: 'Runtime', link: '/runtime' }
-        ]
-      },
-      {
-        text: 'Testando',
-        items: [
-          { text: 'Item 1', link: "..." },
-          { text: 'Item 2', link: "..." },
-        ]
-      }
-    ],
+    // sidebar: [
+    //   {
+    //     text: 'Examples',
+    //     items: [
+    //       { text: 'Markdown Examples', link: '/markdown-examples' },
+    //       { text: 'Runtime API Examples', link: '/api-examples' },
+    //       { text: 'Runtime', link: '/runtime' }
+    //     ]
+    //   },
+    //   {
+    //     text: 'Testando',
+    //     items: [
+    //       { text: 'Item 1', link: "..." },
+    //       { text: 'Item 2', link: "..." },
+    //     ]
+    //   }
+    // ],
+
+    sidebar: {
+      '/guide/': [
+        {
+          text: "Guide",
+          items: [
+            { text: 'Texto 1', link: '/guide/' },
+            { text: 'Texto 2', link: '/guide/api-example' }
+          ]
+        }
+      ],
+      '/config/': [
+        {
+          text: 'Guia',
+          items: [
+            { text: 'Markdown', link: '/config/markdown-examples' }
+          ]
+        }
+      ]
+    },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
