@@ -24,10 +24,10 @@ export default defineConfig({
           }
         ]
       },
-      {
+      { 
+        text: 'Menu Dropdown', 
         items: [
           {
-            text: 'Titulo da Seção B',
             items: [
               {text: 'Item A da Seção A', link: '...'},
               {text: 'Item B da Seção B', link: '...'}
