@@ -11,7 +11,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/config/markdown-examples' },
-      { text: 'Contact', link: '/markdown-contact' },
+      { text: 'API', link: '/guide/api-examples' },
 
       { 
         text: 'Menu Dropdown', 
@@ -19,8 +19,8 @@ export default defineConfig({
           {
             text: 'Titulo da Seção A',
             items: [
-              {text: 'Item A da Seção A', link: '...'},
-              {text: 'Item B da Seção B', link: '...'}
+              {text: 'Markdown', link: '/guide/api-examples'},
+              {text: 'API', link: '/config/markdown-examples'}
             ]
           }
         ]
@@ -63,7 +63,7 @@ export default defineConfig({
           text: "Guide",
           items: [
             { text: 'Texto 1', link: '/guide/' },
-            { text: 'Texto 2', link: '/guide/api-example' }
+            { text: 'Texto 2', link: '/guide/api-examples' }
           ]
         }
       ],
