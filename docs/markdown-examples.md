@@ -160,4 +160,87 @@ public class World {
 ```
 :::
 
-## More
+## Começando...
+
+Iniciando teste com outro projeto. Estes são anotações do que é criado em cada comando.
+
+### Criar projeto
+
+Quando executar o comando 
+
+```sh
+npm add -D vitepress
+```
+
+Uma pasta e três arquivos serão criados na raiz, conforme a seguinte estrutura.
+
+```
+.
+├─ node_modules
+├─ package-lock.json
+└─ package.json
+```
+
+### Iniciar projeto
+
+Aqui será iniciado o projeto, algumas configurações serão necessárias para garantir que o projeto será feito com os padrões que você desejar.
+
+```sh
+npx vitepress init
+```
+
+Ao executar este comando algumas perguntas serão feitas através do terminal interativo. Essas perguntas irão determinar os padrões do projeto como uso de `TypeScript` ou se o diretório `docs` será utilizado como raiz.
+
+```
+┌  Welcome to VitePress!
+│
+◇  Where should VitePress initialize the config?
+│  ./docs
+│
+◇  Site title:
+│  My Awesome Project
+│
+◇  Site description:
+│  A VitePress Site
+│
+◆  Theme:
+│  ● Default Theme (Out of the box, good-looking docs)
+│  ○ Default Theme + Customization
+│  ○ Custom Theme
+└
+```
+
+Conforme documentação em [Getting Started](https://vitepress.dev/pt/guide/getting-started).
+
+#### A pasta `docs`
+
+Após esta interação, caso na primeira pergunta você tenha escolhido a opção `./docs` a estrutura do projeto ficará da seguinte forma.
+
+```
+.
+├─ docs
+│  ├─ .vitepress
+│  │  └─ config.js
+│  ├─ api-examples.md
+│  ├─ markdown-examples.md
+│  └─ index.md
+├─ node_modules
+├─ package-lock.json
+└─ package.json
+```
+
+## Observação no Build
+
+Para criar o build e funcionar corretamente é necessário informar o comando que irá fazer o build no campo `Build command` e o diretório onde os arquivos complicados para .html ficarão, essa instrução deve estar no campo `Published directory`.
+
+No campo `Build command` adicionar este comando:
+
+```sh
+npm run docs:build
+```
+
+Já no campo `Published directory` adicionar esta instrução:
+
+```
+docs/.vitepress/dist
+```

@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "Meu projeto teste"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "Anotações"
+  text: "Agrupador de Notas Práticas e Técnicas"
+  # tagline: Meu projeto documentado
   actions:
     - theme: brand
       text: Markdown Examples
