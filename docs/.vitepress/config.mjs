@@ -17,7 +17,6 @@ export default defineConfig({
         text: 'Menu Dropdown', 
         items: [
           {
-            text: 'Titulo da Seção A',
             items: [
               {text: 'Markdown', link: '/config/markdown-examples'},
               {text: 'API', link: '/guide/api-examples'}
