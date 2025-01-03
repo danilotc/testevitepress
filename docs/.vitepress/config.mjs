@@ -2,8 +2,9 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "dnlnotes",
-  description: "Site criado com VitePress",
+  lang: 'pt-BR',
+  title: "Meu projeto teste",
+  description: "A VitePress Site",
   lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -29,7 +30,12 @@ export default defineConfig({
     ],
 
     head: [
-      ['link', { rel: 'icon', type: 'image/png', size: '48x48', href: '/dist/assets/favicon-48x48.png' }]
-    ]
+      ['link', { rel: 'icon', href: '/dist/assets/favicon-48x48.png' }]
+    ],
+
+    footer: {
+      message: 'Lançado sob a Licença MIT.',
+      copyright: 'Direitos autorais © 2019-presente Evan You'
+    }
   }
 })
