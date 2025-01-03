@@ -48,8 +48,8 @@ export default defineConfig({
     },
 
     docFooter: {
-      prev: 'Página anterior',
-      next: 'Próxima página'
+      prev: 'Anterior',
+      next: 'Próximo'
     }
   }
 })
