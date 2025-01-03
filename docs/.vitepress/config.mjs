@@ -44,11 +44,7 @@ export default defineConfig({
     },
 
     lastUpdated: {
-      text: 'Atualizado em',
-      formatOptions: {
-        dateStyle: 'full',
-        timeStyle: 'short'
-      }
+      text: 'Atualizado em'
     }
   }
 })
