@@ -36,6 +36,11 @@ export default defineConfig({
     footer: {
       message: 'Lançado sob a Licença MIT.',
       copyright: 'Direitos autorais © 2019-presente Evan You'
+    },
+
+    editLink: {
+      pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
+      text: 'Editar esta página no GitHub'
     }
   }
 })
