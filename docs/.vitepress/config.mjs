@@ -19,8 +19,8 @@ export default defineConfig({
           {
             text: 'Titulo da Seção A',
             items: [
-              {text: 'Markdown', link: '/guide/api-examples'},
-              {text: 'API', link: '/config/markdown-examples'}
+              {text: 'Markdown', link: '/config/markdown-examples'},
+              {text: 'API', link: '/guide/api-examples'}
             ]
           }
         ]
