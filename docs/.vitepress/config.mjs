@@ -12,7 +12,32 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' },
-      { text: 'Contact', link: '/markdown-contact' }
+      { text: 'Contact', link: '/markdown-contact' },
+
+      { 
+        text: 'Menu Dropdown', 
+        items: [
+          {
+            text: 'Titulo da Seção A',
+            items: [
+              {text: 'Item A da Seção A', link: '...'},
+              {text: 'Item B da Seção B', link: '...'}
+            ]
+          }
+        ]
+      },
+      { 
+        text: 'Menu Dropdown', 
+        items: [
+          {
+            text: 'Titulo da Seção B',
+            items: [
+              {text: 'Item A da Seção A', link: '...'},
+              {text: 'Item B da Seção B', link: '...'}
+            ]
+          }
+        ]
+      }
     ],
 
     sidebar: [
